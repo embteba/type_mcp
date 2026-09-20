@@ -1,0 +1,43 @@
+{
+  "name": "type-mcp",
+  "version": "0.1.0",
+  "description": "MCP server implementede in typescript",
+  "keywords": [
+    "mcp",
+    "typescript"
+  ],
+  "homepage": "https://github.com/embteba/type_mcp#readme",
+  "bugs": {
+    "url": "https://github.com/embteba/type_mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/embteba/type_mcp.git"
+  },
+  "license": "MIT",
+  "author": "embteba",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "type-mcp": "./dist/index.js"
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.5",
+    "zod-to-json-schema": "^3.25.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0"
+  }
+}
